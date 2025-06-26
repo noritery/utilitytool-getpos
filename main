@@ -1,287 +1,347 @@
--- Instances:
+-- Instances: 26 | Scripts: 7 | Modules: 0 | Tags: 0
+local G2L = {};
 
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("ImageLabel")
-local TextButton = Instance.new("TextButton")
-local TextButton_Roundify_12px = Instance.new("ImageLabel")
-local floored = Instance.new("TextBox")
-local TextBox_Roundify_12px = Instance.new("ImageLabel")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_Roundify_12px_2 = Instance.new("ImageLabel")
-local TextLabel = Instance.new("TextLabel")
-local TextButton_3 = Instance.new("TextButton")
-local TextButton_Roundify_12px_3 = Instance.new("ImageLabel")
-local TextButton_4 = Instance.new("TextButton")
-local TextButton_Roundify_12px_4 = Instance.new("ImageLabel")
-local exact = Instance.new("TextBox")
-local TextBox_Roundify_12px_2 = Instance.new("ImageLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextButton_5 = Instance.new("TextButton")
-local open = Instance.new("Frame")
-local TextButton_6 = Instance.new("TextButton")
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 
---Properties:
 
-ScreenGui.Parent = game.StarterPack
 
-Frame.Name = "Frame"
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BackgroundTransparency = 1.000
-Frame.BorderColor3 = Color3.fromRGB(130, 203, 255)
-Frame.Position = UDim2.new(0.114285715, 0, 0.191596642, 0)
-Frame.Size = UDim2.new(0, 356, 0, 257)
-Frame.Image = "rbxassetid://3570695787"
-Frame.ImageColor3 = Color3.fromRGB(52, 52, 52)
-Frame.ScaleType = Enum.ScaleType.Slice
-Frame.SliceCenter = Rect.new(100, 100, 100, 100)
-Frame.SliceScale = 0.120
+-- StarterGui.ScreenGui.Frame
+G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["2"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+G2L["2"]["SliceScale"] = 0.12;
+G2L["2"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["2"]["ImageColor3"] = Color3.fromRGB(53, 53, 53);
+G2L["2"]["Image"] = [[rbxassetid://3570695787]];
+G2L["2"]["Size"] = UDim2.new(0, 356, 0, 257);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(131, 204, 255);
+G2L["2"]["BackgroundTransparency"] = 1;
+G2L["2"]["Name"] = [[Frame]];
+G2L["2"]["Position"] = UDim2.new(0.40687, 0, 0.33261, 0);
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-TextButton.BackgroundTransparency = 1.000
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0929650292, 0, 0.398986697, 0)
-TextButton.Size = UDim2.new(0, 117, 0, 50)
-TextButton.ZIndex = 2
-TextButton.Font = Enum.Font.Code
-TextButton.Text = "LocalPlayer Position"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 18.000
-TextButton.TextWrapped = true
 
-TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px.Parent = TextButton
-TextButton_Roundify_12px.Active = true
-TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px.BackgroundTransparency = 1.000
-TextButton_Roundify_12px.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px.Selectable = true
-TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(63, 63, 63)
-TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px.SliceScale = 0.120
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["3"] = Instance.new("TextButton", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextSize"] = 18;
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["ZIndex"] = 2;
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["Size"] = UDim2.new(0, 117, 0, 50);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[LocalPlayer Position]];
+G2L["3"]["Position"] = UDim2.new(0.09297, 0, 0.39899, 0);
 
-floored.Name = "floored"
-floored.Parent = Frame
-floored.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-floored.BackgroundTransparency = 1.000
-floored.BorderColor3 = Color3.fromRGB(0, 0, 0)
-floored.BorderSizePixel = 0
-floored.Position = UDim2.new(0.0970823467, 0, 0.711098135, 0)
-floored.Size = UDim2.new(0, 116, 0, 50)
-floored.ZIndex = 2
-floored.ClearTextOnFocus = false
-floored.Font = Enum.Font.Code
-floored.Text = ""
-floored.TextColor3 = Color3.fromRGB(255, 255, 255)
-floored.TextSize = 10.000
-floored.TextWrapped = true
 
-TextBox_Roundify_12px.Name = "TextBox_Roundify_12px"
-TextBox_Roundify_12px.Parent = floored
-TextBox_Roundify_12px.Active = true
-TextBox_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
-TextBox_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_Roundify_12px.BackgroundTransparency = 1.000
-TextBox_Roundify_12px.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextBox_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextBox_Roundify_12px.Selectable = true
-TextBox_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
-TextBox_Roundify_12px.Image = "rbxassetid://3570695787"
-TextBox_Roundify_12px.ImageColor3 = Color3.fromRGB(63, 63, 63)
-TextBox_Roundify_12px.ScaleType = Enum.ScaleType.Slice
-TextBox_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
-TextBox_Roundify_12px.SliceScale = 0.120
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["4"] = Instance.new("LocalScript", G2L["3"]);
 
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-TextButton_2.BackgroundTransparency = 1.000
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.0929650292, 0, 0.144213006, 0)
-TextButton_2.Size = UDim2.new(0, 117, 0, 50)
-TextButton_2.ZIndex = 2
-TextButton_2.Font = Enum.Font.Code
-TextButton_2.Text = "Clicked Position"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextSize = 22.000
-TextButton_2.TextWrapped = true
 
-TextButton_Roundify_12px_2.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_2.Parent = TextButton_2
-TextButton_Roundify_12px_2.Active = true
-TextButton_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_2.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextButton_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_2.Selectable = true
-TextButton_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_2.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_2.ImageColor3 = Color3.fromRGB(63, 63, 63)
-TextButton_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_2.SliceScale = 0.120
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, -0.023346303, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.Garamond
-TextLabel.Text = "math.floor() - Not Exact Position"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
+-- StarterGui.ScreenGui.Frame.TextButton.TextButton_Roundify_12px
+G2L["5"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["5"]["Active"] = true;
+G2L["5"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+G2L["5"]["SliceScale"] = 0.12;
+G2L["5"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["5"]["ImageColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5"]["Image"] = [[rbxassetid://3570695787]];
+G2L["5"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Selectable"] = true;
+G2L["5"]["Name"] = [[TextButton_Roundify_12px]];
+G2L["5"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
-TextButton_3.Parent = Frame
-TextButton_3.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-TextButton_3.BackgroundTransparency = 1.000
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.592965007, 0, 0.144213006, 0)
-TextButton_3.Size = UDim2.new(0, 117, 0, 50)
-TextButton_3.ZIndex = 2
-TextButton_3.Font = Enum.Font.Code
-TextButton_3.Text = "Clicked Position"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextSize = 22.000
-TextButton_3.TextWrapped = true
 
-TextButton_Roundify_12px_3.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_3.Parent = TextButton_3
-TextButton_Roundify_12px_3.Active = true
-TextButton_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_3.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextButton_Roundify_12px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_3.Selectable = true
-TextButton_Roundify_12px_3.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_3.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_3.ImageColor3 = Color3.fromRGB(63, 63, 63)
-TextButton_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_3.SliceScale = 0.120
+-- StarterGui.ScreenGui.Frame.floored
+G2L["6"] = Instance.new("TextBox", G2L["2"]);
+G2L["6"]["Name"] = [[floored]];
+G2L["6"]["ZIndex"] = 2;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextEditable"] = false;
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["TextSize"] = 10;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["ClearTextOnFocus"] = false;
+G2L["6"]["Size"] = UDim2.new(0, 116, 0, 50);
+G2L["6"]["Position"] = UDim2.new(0.09708, 0, 0.7111, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[]];
+G2L["6"]["BackgroundTransparency"] = 1;
 
-TextButton_4.Parent = Frame
-TextButton_4.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-TextButton_4.BackgroundTransparency = 1.000
-TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.592965007, 0, 0.398986697, 0)
-TextButton_4.Size = UDim2.new(0, 117, 0, 50)
-TextButton_4.ZIndex = 2
-TextButton_4.Font = Enum.Font.Code
-TextButton_4.Text = "LocalPlayer Position"
-TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.TextSize = 18.000
-TextButton_4.TextWrapped = true
 
-TextButton_Roundify_12px_4.Name = "TextButton_Roundify_12px"
-TextButton_Roundify_12px_4.Parent = TextButton_4
-TextButton_Roundify_12px_4.Active = true
-TextButton_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_12px_4.BackgroundTransparency = 1.000
-TextButton_Roundify_12px_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextButton_Roundify_12px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_12px_4.Selectable = true
-TextButton_Roundify_12px_4.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_12px_4.Image = "rbxassetid://3570695787"
-TextButton_Roundify_12px_4.ImageColor3 = Color3.fromRGB(63, 63, 63)
-TextButton_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_12px_4.SliceScale = 0.120
+-- StarterGui.ScreenGui.Frame.floored.TextBox_Roundify_12px
+G2L["7"] = Instance.new("ImageLabel", G2L["6"]);
+G2L["7"]["Active"] = true;
+G2L["7"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+G2L["7"]["SliceScale"] = 0.12;
+G2L["7"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["7"]["ImageColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["7"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["7"]["Image"] = [[rbxassetid://3570695787]];
+G2L["7"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Selectable"] = true;
+G2L["7"]["Name"] = [[TextBox_Roundify_12px]];
+G2L["7"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
-exact.Name = "exact"
-exact.Parent = Frame
-exact.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-exact.BackgroundTransparency = 1.000
-exact.BorderColor3 = Color3.fromRGB(0, 0, 0)
-exact.BorderSizePixel = 0
-exact.Position = UDim2.new(0.597082317, 0, 0.711098135, 0)
-exact.Size = UDim2.new(0, 116, 0, 50)
-exact.ZIndex = 2
-exact.ClearTextOnFocus = false
-exact.Font = Enum.Font.Code
-exact.Text = ""
-exact.TextColor3 = Color3.fromRGB(255, 255, 255)
-exact.TextSize = 10.000
-exact.TextWrapped = true
 
-TextBox_Roundify_12px_2.Name = "TextBox_Roundify_12px"
-TextBox_Roundify_12px_2.Parent = exact
-TextBox_Roundify_12px_2.Active = true
-TextBox_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextBox_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_Roundify_12px_2.BackgroundTransparency = 1.000
-TextBox_Roundify_12px_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextBox_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextBox_Roundify_12px_2.Selectable = true
-TextBox_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
-TextBox_Roundify_12px_2.Image = "rbxassetid://3570695787"
-TextBox_Roundify_12px_2.ImageColor3 = Color3.fromRGB(63, 63, 63)
-TextBox_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
-TextBox_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
-TextBox_Roundify_12px_2.SliceScale = 0.120
+-- StarterGui.ScreenGui.Frame.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["2"]);
 
-TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.474719107, 0, -0.023346303, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.Garamond
-TextLabel_2.Text = "Exact Position"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 14.000
 
-TextButton_5.Parent = Frame
-TextButton_5.BackgroundColor3 = Color3.fromRGB(104, 18, 29)
-TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0.219101131, 0, -0.0583657585, 0)
-TextButton_5.Size = UDim2.new(0, 200, 0, 15)
-TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = "H I D E      G U I"
-TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_5.TextSize = 14.000
 
-open.Name = "open"
-open.Parent = ScreenGui
-open.BackgroundColor3 = Color3.fromRGB(6, 135, 28)
-open.BackgroundTransparency = 1.000
-open.BorderColor3 = Color3.fromRGB(0, 0, 0)
-open.BorderSizePixel = 0
-open.Position = UDim2.new(0, 0, 0.321008414, 0)
-open.Size = UDim2.new(0, 12, 0, 100)
-open.Visible = false
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 22;
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["ZIndex"] = 2;
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Size"] = UDim2.new(0, 117, 0, 50);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Clicked Position]];
+G2L["9"]["Position"] = UDim2.new(0.09297, 0, 0.14421, 0);
 
-TextButton_6.Parent = open
-TextButton_6.BackgroundColor3 = Color3.fromRGB(14, 102, 4)
-TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_6.BorderSizePixel = 0
-TextButton_6.Position = UDim2.new(85.5, 0, -1.90999997, 0)
-TextButton_6.Size = UDim2.new(0, 73, 0, 24)
-TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "O P E N     G U I"
-TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_6.TextSize = 14.000
 
--- Scripts:
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
 
-local function IHID_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
 
+
+-- StarterGui.ScreenGui.Frame.TextButton.TextButton_Roundify_12px
+G2L["b"] = Instance.new("ImageLabel", G2L["9"]);
+G2L["b"]["Active"] = true;
+G2L["b"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+G2L["b"]["SliceScale"] = 0.12;
+G2L["b"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["b"]["ImageColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["b"]["Image"] = [[rbxassetid://3570695787]];
+G2L["b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Selectable"] = true;
+G2L["b"]["Name"] = [[TextButton_Roundify_12px]];
+G2L["b"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["c"] = Instance.new("TextLabel", G2L["2"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Guru.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["BackgroundTransparency"] = 1;
+G2L["c"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[math.floor() - Not Exact Position]];
+G2L["c"]["Position"] = UDim2.new(0, 0, -0.02335, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["d"] = Instance.new("TextButton", G2L["2"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 22;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["ZIndex"] = 2;
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Size"] = UDim2.new(0, 117, 0, 50);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Clicked Position]];
+G2L["d"]["Position"] = UDim2.new(0.59297, 0, 0.14421, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.TextButton_Roundify_12px
+G2L["f"] = Instance.new("ImageLabel", G2L["d"]);
+G2L["f"]["Active"] = true;
+G2L["f"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+G2L["f"]["SliceScale"] = 0.12;
+G2L["f"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["f"]["ImageColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["f"]["Image"] = [[rbxassetid://3570695787]];
+G2L["f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["Selectable"] = true;
+G2L["f"]["Name"] = [[TextButton_Roundify_12px]];
+G2L["f"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["10"] = Instance.new("TextButton", G2L["2"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 18;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["ZIndex"] = 2;
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Size"] = UDim2.new(0, 117, 0, 50);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[LocalPlayer Position]];
+G2L["10"]["Position"] = UDim2.new(0.59297, 0, 0.39899, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.TextButton_Roundify_12px
+G2L["12"] = Instance.new("ImageLabel", G2L["10"]);
+G2L["12"]["Active"] = true;
+G2L["12"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+G2L["12"]["SliceScale"] = 0.12;
+G2L["12"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["12"]["ImageColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["12"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["12"]["Image"] = [[rbxassetid://3570695787]];
+G2L["12"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Selectable"] = true;
+G2L["12"]["Name"] = [[TextButton_Roundify_12px]];
+G2L["12"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.ScreenGui.Frame.exact
+G2L["13"] = Instance.new("TextBox", G2L["2"]);
+G2L["13"]["Name"] = [[exact]];
+G2L["13"]["ZIndex"] = 2;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextEditable"] = false;
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["TextSize"] = 10;
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["ClearTextOnFocus"] = false;
+G2L["13"]["Size"] = UDim2.new(0, 116, 0, 50);
+G2L["13"]["Position"] = UDim2.new(0.59708, 0, 0.7111, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[]];
+G2L["13"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.exact.TextBox_Roundify_12px
+G2L["14"] = Instance.new("ImageLabel", G2L["13"]);
+G2L["14"]["Active"] = true;
+G2L["14"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+G2L["14"]["SliceScale"] = 0.12;
+G2L["14"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["14"]["ImageColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["14"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["14"]["Image"] = [[rbxassetid://3570695787]];
+G2L["14"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Selectable"] = true;
+G2L["14"]["Name"] = [[TextBox_Roundify_12px]];
+G2L["14"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["15"] = Instance.new("TextLabel", G2L["2"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Guru.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Exact Position]];
+G2L["15"]["Position"] = UDim2.new(0.47472, 0, -0.02335, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["16"] = Instance.new("TextButton", G2L["2"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(105, 19, 30);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["Size"] = UDim2.new(0, 200, 0, 15);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[H I D E      G U I]];
+G2L["16"]["Position"] = UDim2.new(0.2191, 0, -0.05837, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+
+
+
+-- StarterGui.ScreenGui.open
+G2L["18"] = Instance.new("Frame", G2L["1"]);
+G2L["18"]["Visible"] = false;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(7, 136, 29);
+G2L["18"]["Size"] = UDim2.new(0, 12, 0, 100);
+G2L["18"]["Position"] = UDim2.new(0, 0, 0.32101, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Name"] = [[open]];
+G2L["18"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.open.TextButton
+G2L["19"] = Instance.new("TextButton", G2L["18"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(15, 103, 5);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 73, 0, 24);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[O P E N     G U I]];
+G2L["19"]["Position"] = UDim2.new(0, 0, 1.32, 0);
+
+
+-- StarterGui.ScreenGui.open.TextButton.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_4()
+local script = G2L["4"];
 	local buton = script.Parent
 	local player = game.Players.LocalPlayer
 	local text = script.Parent.Parent.floored
@@ -294,11 +354,11 @@ local function IHID_fake_script() -- TextButton.LocalScript
 		text.Text = "X: "..math.floor(pos.X).." Y: "..math.floor(pos.Y).." Z: "..math.floor(pos.Z)
 	end)
 	
-end
-coroutine.wrap(IHID_fake_script)()
-local function DSNY_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
+end;
+task.spawn(C_4);
+-- StarterGui.ScreenGui.Frame.LocalScript
+local function C_8()
+local script = G2L["8"];
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
@@ -334,11 +394,11 @@ local function DSNY_fake_script() -- Frame.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(DSNY_fake_script)()
-local function WPBDAL_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-
+end;
+task.spawn(C_8);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_a()
+local script = G2L["a"];
 	local buton = script.Parent
 	local player = game.Players.LocalPlayer
 	local mouse = player:GetMouse()
@@ -367,11 +427,11 @@ local function WPBDAL_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(WPBDAL_fake_script)()
-local function LHNETGX_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_3)
-
+end;
+task.spawn(C_a);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_e()
+local script = G2L["e"];
 	local buton = script.Parent
 	local player = game.Players.LocalPlayer
 	local mouse = player:GetMouse()
@@ -400,11 +460,11 @@ local function LHNETGX_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(LHNETGX_fake_script)()
-local function PDMV_fake_script() -- TextButton_4.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_4)
-
+end;
+task.spawn(C_e);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_11()
+local script = G2L["11"];
 	local buton = script.Parent
 	local player = game.Players.LocalPlayer
 	local text = script.Parent.Parent.exact
@@ -416,11 +476,11 @@ local function PDMV_fake_script() -- TextButton_4.LocalScript
 	
 		text.Text = "X: " .. pos.X .. " Y: " .. pos.Y .. " Z: " .. pos.Z
 	end)
-end
-coroutine.wrap(PDMV_fake_script)()
-local function KSKJC_fake_script() -- TextButton_5.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_5)
-
+end;
+task.spawn(C_11);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_17()
+local script = G2L["17"];
 	local opene = script.Parent.Parent.Parent.open
 	local button = script.Parent
 	
@@ -428,11 +488,11 @@ local function KSKJC_fake_script() -- TextButton_5.LocalScript
 		opene.Visible = true
 		script.Parent.Parent.Visible = false
 	end)
-end
-coroutine.wrap(KSKJC_fake_script)()
-local function VHJOVHX_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_6)
-
+end;
+task.spawn(C_17);
+-- StarterGui.ScreenGui.open.TextButton.LocalScript
+local function C_1a()
+local script = G2L["1a"];
 	local opene = script.Parent.Parent.Parent.Frame
 	local button = script.Parent
 	
@@ -440,5 +500,7 @@ local function VHJOVHX_fake_script() -- TextButton_6.LocalScript
 		opene.Visible = true
 		script.Parent.Parent.Visible = false
 	end)
-end
-coroutine.wrap(VHJOVHX_fake_script)()
+end;
+task.spawn(C_1a);
+
+return G2L["1"], require;
